@@ -17,10 +17,11 @@ The Library supports all APIs under the following services:
 * Deno
 
 ## Usage
-> check `[service]_test.ts` for usage examples.
 ```ts
 import { Client } from "https://deno.land/x/adyen_deno/client.ts";
 ```
+> check `[service]_test.ts` for live examples.
+
 ## Contributing
 We strongly encourage you to join us in contributing to this repository so everyone can benefit from:
 * New features and functionality
