@@ -25,7 +25,7 @@ const commonPayment = {
   reference: "ORDER_REFERENCE",
 };
 
-function createPaymentsCheckoutRequest() {
+export function createPaymentsCheckoutRequest() {
   const paymentMethodDetails = {
     cvc: "737",
     expiryMonth: "03",

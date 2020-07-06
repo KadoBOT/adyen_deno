@@ -1,6 +1,7 @@
 import { BinLookup } from "./binLookup.ts";
 import { Checkout } from "./checkout.ts";
 import { Modifications } from "./modifications.ts";
+import { Recurring } from "./recurring.ts";
 
 type APIKeyAuth = { apiKey: string };
 type BasicAuth = { username: string; password: string };
@@ -60,6 +61,7 @@ export class Client {
   public binLookup: BinLookup;
   public checkout: Checkout;
   public modifications: Modifications;
+  public recurring: Recurring;
 
   public constructor(props: ClientProps) {
     const options = this.getOptions(
@@ -71,6 +73,7 @@ export class Client {
     this.binLookup = new BinLookup(this.#config);
     this.checkout = new Checkout(this.#config);
     this.modifications = new Modifications(this.#config);
+    this.recurring = new Recurring(this.#config);
   }
 
   private getOptions(
