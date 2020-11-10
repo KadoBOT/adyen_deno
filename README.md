@@ -1,5 +1,5 @@
 # Adyen Deno API Library
-The Adyen API Library for Debi enables you to work with Adyen APIs.
+The Adyen API Library for Deno enables you to work with Adyen APIs.
 
 ## Integration
 The Library supports all APIs under the following services:
